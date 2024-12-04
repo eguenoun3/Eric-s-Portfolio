@@ -7,17 +7,31 @@ body {
     color: #343a40;
 }
 
-h1, h2, h3 {
+/* Heading Styles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
     color: #007bff;
 }
 
-a {
-    text-decoration: none;
+h2, h3 {
     color: #007bff;
 }
 
-a:hover {
-    text-decoration: underline;
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Toggle Icon Styles */
+.toggle-icon {
+    font-size: 1.2em;
+    color: #007bff;
 }
 
 /* Navigation Styles */
@@ -43,6 +57,7 @@ nav ul li a {
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -60,16 +75,36 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+/* Project Section Styles */
+.project {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
-ul {
-    padding-left: 20px;
+.project-content {
+    display: none;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
 }
 
-/* Contact Form */
+.active .project-content {
+    display: block;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
@@ -92,7 +127,7 @@ ul {
     background-color: #0056b3;
 }
 
-/* Footer (Optional) */
+/* Footer Styles (Optional) */
 footer {
     text-align: center;
     padding: 20px;
@@ -117,3 +152,4 @@ footer {
         padding: 15px;
     }
 }
+
